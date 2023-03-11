@@ -12,9 +12,6 @@ import Button from 'common/components/Button';
 import Image from 'common/components/Image';
 import LoginModalWrapper from './loginModal.style';
 import 'rc-tabs/assets/index.css';
-import LogoImage from 'common/assets/image/agency/logo.png';
-import LoginImage from 'common/assets/image/agency/login-bg.jpg';
-import GoogleLogo from 'common/assets/image/agency/google-icon.jpg';
 
 const LoginModal = ({
 	row,
