@@ -393,35 +393,84 @@ export const testimonialData = {
   ],
 };
 
+export const galleryData2 = {
+  images: [
+    {
+      path: galleryImg1,
+    },
+    {
+      path: galleryImg2,
+    },
+    {
+      path: galleryImg3,
+    },
+    {
+      path: galleryImg4,
+    },
+  ],
+  title: "Let’s take your Delivery Experience to the next level",
+  text: "Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool. Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool.",
+};
+
 export const galleryData = [
   {
     id: 1,
     thumb_url: galleryImg1,
-    name: "",
+    name: "j",
     link: "#",
   },
   {
     id: 2,
     thumb_url: galleryImg2,
-    name: "",
+    name: "i",
     link: "#",
   },
   {
     id: 3,
     thumb_url: galleryImg3,
-    name: "",
+    name: "h",
     link: "#",
   },
   {
     id: 4,
     thumb_url: galleryImg4,
-    name: "",
+    name: "g",
     link: "#",
   },
   {
     id: 5,
     thumb_url: galleryImg5,
-    name: "",
+    name: "f",
+    link: "#",
+  },
+  {
+    id: 6,
+    thumb_url: galleryImg1,
+    name: "e",
+    link: "#",
+  },
+  {
+    id: 7,
+    thumb_url: galleryImg2,
+    name: "d",
+    link: "#",
+  },
+  {
+    id: 8,
+    thumb_url: galleryImg3,
+    name: "c",
+    link: "#",
+  },
+  {
+    id: 9,
+    thumb_url: galleryImg4,
+    name: "b",
+    link: "#",
+  },
+  {
+    id: 10,
+    thumb_url: galleryImg5,
+    name: "a",
     link: "#",
   },
 ];
@@ -437,7 +486,7 @@ export const newsletterData = {
 
 export const footerData = {
   logo: logo,
-  mail: "hello@gmail.com",
+  mail: "suryachandraengineering@gmail.com",
   phone: "+62 852-3725-3279",
   socialLinks: [
     {

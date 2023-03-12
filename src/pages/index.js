@@ -13,6 +13,7 @@ import Team from "containers/Interior/Team";
 import News from "containers/Interior/News";
 import Testimonial from "containers/Interior/Testimonial";
 import Gallery from "containers/Interior/Gallery";
+import Gallery2 from "containers/FoodDelivery/Gallery";
 import Footer from "containers/Interior/Footer";
 import ResetCSS from "common/assets/css/style";
 import {
@@ -60,7 +61,7 @@ const Interior = () => {
             {/* <Team /> */}
             {/* <News /> */}
             {/* <Testimonial /> */}
-            <Gallery />
+            <Gallery2 />
           </ContentWrapper>
           <Footer />
         </InteriorWrapper>
