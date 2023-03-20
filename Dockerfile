@@ -12,7 +12,7 @@ COPY ./package*.json ./
 
 # Install dependencies
 RUN npm install --production
-RUN npm install --dev eslint eslint-config-next
+#RUN npm install --dev eslint eslint-config-next
 # Copy all files
 COPY ./ ./
 
