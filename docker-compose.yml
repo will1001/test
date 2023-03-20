@@ -1,6 +1,6 @@
 version: '3'
 services:
-  sjp-frontend:
+  sce:
     container_name: sce
     build: ./
     restart: always
