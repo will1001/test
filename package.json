@@ -4,9 +4,9 @@
   "private": true,
   "main": "firebaseFunctions.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next --port 3001",
     "build": "next build && next export",
-    "start": "next start",
+    "start": "next start -p 3001",
     "serve": "npm run build && firebase emulators:start --only functions,hosting",
     "shell": "npm run build && firebase functions:shell",
     "deploy": "firebase deploy --only functions,hosting",
