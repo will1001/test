@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sjp-frontend:
+    container_name: sce
+    build: ./
+    restart: always
+  nginx:
+    container_name: sce-nginx
+    build: ./nginx
+    ports:
+      - 8087:80
+    restart: always

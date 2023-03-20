@@ -1,9 +1,31 @@
-FROM mhart/alpine-node:11 AS builder
-WORKDIR /app
+# Base on offical Node.js Alpine image
+FROM node:14.21.2-alpine
 
-COPY packages/landing /app
+# Set working directory
+WORKDIR /usr/app
 
-RUN apk --no-cache add pkgconfig autoconf automake libtool nasm build-base zlib-dev
-RUN yarn && yarn build
+# Install PM2 globally
+RUN npm install --global pm2
+# Copy package.json and package-lock.json before other files
+# Utilise Docker cache to save re-installing dependencies if unchanged
+COPY ./package*.json ./
 
-CMD [ "yarn", "start" ]
+# Install dependencies
+RUN npm install --production
+RUN npm install --dev eslint eslint-config-next
+# Copy all files
+COPY ./ ./
+
+# Build app
+RUN npm run build
+
+# Expose the listening port
+EXPOSE 3001
+
+# Run container as non-root (unprivileged) user
+# The node user is provided in the Node.js Alpine base image
+USER node
+
+# Run npm start script with PM2 when container starts
+CMD [ "pm2-runtime", "npm", "--", "start" ]
+
